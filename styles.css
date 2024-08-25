@@ -1,0 +1,113 @@
+body, #projects-banner, #teachers-banner, footer {
+    background-color: #500000;
+    background-image: radial-gradient(circle, #E0D6, transparent 11%);
+    background-size: 30px 30px;
+}
+
+/* Section Styling */
+
+.project-card a{
+    color: #99ddf7;
+}
+
+#about, #projects, #teachers {
+    background-color: #420000;
+}
+
+
+/* Teaching Card Styling */
+.project-card, .teaching-card {
+    background-color: #3A0000;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 100%; /* Ensures it stays within the container's width */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover, .teaching-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3, .teaching-card h3 {
+    color: #FFFFFF;
+}
+
+.project-card p, .teaching-card p {
+    color: #E0E0E0;
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+.project-card p.italic, .teaching-card p.italic {
+    font-style: italic;
+    color: #d3d3d3;
+}
+
+.project-card a, .teaching-card a, footer a{
+    color: #77BBD5;
+}
+
+.project-card a:hover, .teaching-card a:hover, footer a:hover {
+    color: #99ddf7;
+}
+
+/* Header Styling */
+header {
+    background-color: #000000; /* White background for header */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+#menu, #mobile-menu {
+    background-color: #000000;
+}
+
+
+@media (min-width: 768px) {
+    #menu {
+        display: flex; /* Show the regular menu on screens wider than 768px */
+    }
+
+    #mobile-menu {
+        display: none; /* Ensure the mobile menu remains hidden on larger screens */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 100%; /* Override to ensure full width */
+    }
+}
+
+#mobile-menu a:hover {
+    background-color: #2a2c2c; /* Change this to your desired background color */
+    color: #df1010; /* Change this to your desired text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Uncategorized */
+
+.border-line {
+    height: 2px; /* Thickness of the line */
+    background-color: white; /* Color of the line */
+    margin-bottom: 0px; /* Ensure it sticks closely to the menu */
+}
+
+html {
+    scroll-padding-top: 80px; /* Adjust this value based on your header's height */
+}
+
+.active {
+    color: #7c0000; /* Change this color as needed */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
